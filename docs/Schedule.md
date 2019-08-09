@@ -1,9 +1,9 @@
-ZyGoLife Genomics Workshop 2019
+## ZyGoLife Genomics Workshop 2019
 =========
 
 **Schedule**: September 9 - 13, 2019
 
-Location: TBD
+Location: Campbell Hall - ULB 101
 
 Monday 9/9
 =========
