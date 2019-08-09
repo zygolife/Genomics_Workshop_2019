@@ -45,4 +45,28 @@ $ grep -v '^>' | seq 's/\s//g | wc -c'
 AACAGATAH
 COMMENT
 !!XXX
-``
+```
+
+This file format contains sequence data along with the per base quality scores. This is typically what you will receive from a sequencing center, company, or what you can download from NCBI, EBI Short Read Archives.
+
+
+## Downloading data
+
+Access to sites can through web or ftp links or in some cases on a hard drive sent directly to you.
+To put these data on the server for processing you will need to copy it over.
+
+**Command line FTP** This is the most common way still to access data. The large database of sequences at NCBI Genbank are accessed this way typically.  There are several command line tools useful for retrieving these file. 
+
+`curl` is a typical tool install on OSX, UNIX. It is a command line URL retriever. Here are some example usage.
+
+```bash
+$ curl ftp://ftp.ncbi.nih.gov/blast/db/FASTA/yeast.nt.gz
+```
+
+## Data Compression
+
+Data files are large, with the billions of bases available in the global sequence databases and or in a single Illumina sequencing lane.  Several tools are used to compress these files and the extension of the files tells you what tool was used to create it or will be needed to uncompress it.
+
+
+
+
