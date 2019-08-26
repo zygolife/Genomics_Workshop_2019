@@ -42,12 +42,15 @@ $ less Gene_list.txt
 ``` 
 
 
-**head** see the first lines in a file. By default this is 10 lines. But you can specify as many as you want with `-n LINES` option.  
+**head** see the first lines in a file. By default this is 10 lines. But you can specify as many as you want with `-n LINES` option.   Useful to get the beginning of a report or see what is the header in a spreadsheet file.
 ```bash
-$ head -n 15 FILES.txt
+$ head -n 15 FILE.txt
 ```
 
-**tail**
+**tail** see the last lines in a file.  By running this command can see the last 10 lines by default. Can specify number of lines with `-n LINES` option.  Useful when looking at a log-file and want to see the last reported messages.
+```bash
+$ tail -n 12 FILE.txt
+```
 
 
 
