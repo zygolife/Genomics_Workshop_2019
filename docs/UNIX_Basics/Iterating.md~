@@ -1,0 +1,14 @@
+## Loops
+
+
+## For loops
+
+
+## UNIX Parallel
+
+```
+module load parallel # on HPCC
+
+parallel -j 10 pigz {} ::: *.fasta
+
+```
