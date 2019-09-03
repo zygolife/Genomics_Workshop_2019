@@ -1,16 +1,19 @@
-## Getting started
+# Getting started
 
-To login to the cluster we need to use ssh client. This allows secure communication with the cluster. The UCR cluster is accessed using the host `cluster.hpcc.ucr.edu`
+This workshop will emphasize UNIX skills to support running .
+ To login to the cluster we need to use ssh client. This allows secure communication with the cluster. The UCR cluster is accessed using the host `cluster.hpcc.ucr.edu`
 
 ```
-$ ssh USERNAME@cluster.hpcc.ucr.edu
+$ ssh -X USERNAME@cluster.hpcc.ucr.edu
 ```
 
 This will start up a UNIX session running on the cluster 'head node'. There are multiple machines which serve as this login node where we can stage our analysis to run on the worker nodes that are on the cluster. Much more detail on the setup of the cluster and resources available at http://hpcc.ucr.edu.
 
-### The command line interface (CLI)
+The `-X` option tells the system to [forward your X11 connection](https://kb.iu.edu/d/bdnt) which is necessary for running interactive graphics (eg showing an image, running a graphical editor program like emacs)
 
-The command line or 
+# The command line interface (CLI)
+
+The command line
 ### Directories and files
 
 **ls**  - list the files and folders in a directory. Options include `-l` to list with details (long). `-t` list ordered by time created (time). These can be combined as `ls -ls` or `ls -l -s`. Specify a folder to list other than the current directory with another argument `ls -l data`.  
@@ -26,20 +29,20 @@ $ mkdir -p Alpha/Beta/Zeta # will not give error
 
 ***rmdir*** Remove a folder. Only works if folder is empty
 
-***rm*** Remove a file or folder. This is command to be careful with. To delete a folder that contains many folders. 
+***rm*** Remove a file or folder. This is command to be careful with. To delete a folder that contains many folders.
 
 **more** See the contents of a text file, one page at a time. Go to the next page with 'space'. Can search for a specific text with slash (`/`).
 
 ```bash
 $ more Gene_list.txt
-``` 
+```
 
 
 **less** See the contents of a text file, one page at a time. Less has *more* options than **more** with arrows which will let you navigate up and down pages and a search option - use the slash (`/`) and then type in a search text it will highlight all the options.
 
 ```bash
 $ less Gene_list.txt
-``` 
+```
 
 
 **head** see the first lines in a file. By default this is 10 lines. But you can specify as many as you want with `-n LINES` option.   Useful to get the beginning of a report or see what is the header in a spreadsheet file.
@@ -51,7 +54,3 @@ $ head -n 15 FILE.txt
 ```bash
 $ tail -n 12 FILE.txt
 ```
-
-
-
-
