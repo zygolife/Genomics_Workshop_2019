@@ -1,50 +1,19 @@
 # Getting started
 
-This workshop will emphasize UNIX skills to support doing genomics and evolutionary analysis with bioinformatics tools. There are many many tutorials and workshops out there. Many are available for free and linked here
-
-* [Data Carpentry](https://datacarpentry.org/) and [Software Carpentry](https://software-carpentry.org/) part of [The Carpentries](https://carpentries.org/)
-* [Data Intensive Biology training](https://dib-training.readthedocs.io/en/pub/) like [Shell Genomics](https://github.com/ngs-docs/2015-shell-genomics)
-* [Getting Started with Genomics Tools](https://github.com/crazyhottommy/getting-started-with-genomics-tools-and-resources)
-* [Happy Belly Bioinformatics](https://astrobiomike.github.io/unix/)
-
-For our workshop we will focus on resources that are already available on the UC Riverside High Performance Computer Cluster ([HPCC](http://hpcc.ucr.edu)) to facilitate the  ability to run analysis on a compute cluster with job queuing and large disk storage. To get access to the cluster after the course you can see info at the link. In addition related resource are available through accounts on the [US XSEDE](https://www.xsede.org/) clusters notably the [UC San Diego Supercomputing Center](https://www.sdsc.edu/)'s [Comet cluster](https://portal.xsede.org/sdsc-comet). The advantage of HPCC is also that a broad variety of software are installed already and tuned for use on our system and the accessibility of GPU nodes for specialized analysis that can take advantage of these resources.
-
+This workshop will emphasize UNIX skills to support running bioinformatics tools for genomic and evolutionary analysis.
  To login to the cluster we need to use ssh client. This allows secure communication with the cluster. The UCR cluster is accessed using the host `cluster.hpcc.ucr.edu`
 
 ```
 $ ssh -X USERNAME@cluster.hpcc.ucr.edu
 ```
 
-This will initiate a [UNIX](https://en.wikipedia.org/wiki/Unix) session running on the cluster 'head node' by connecting through a secure connection. There are multiple machines which serve as this login node where we can stage our analysis to run on the worker nodes that are on the cluster so you may see different names like 'pelican', 'pigeon' when you log in each time. Much more detail on the setup of the cluster and resources available at http://hpcc.ucr.edu.
+This will start up a UNIX session running on the cluster 'head node'. There are multiple machines which serve as this login node where we can stage our analysis to run on the worker nodes that are on the cluster. Much more detail on the setup of the cluster and resources available at http://hpcc.ucr.edu.
 
-You should now see a message as well as a prompt:
-
-```
-
---------------------------------------------------------------------------------
- University of California, Riverside - HPCC (High-Performance Computing Center)
---------------------------------------------------------------------------------
-
-More information about HPCC and how to use the resources provided can
-be found at http://hpcc.ucr.edu/manuals_linux-cluster_intro.html
-
-Please send all questions and support requests to support@hpcc.ucr.edu
-
-Note: The default version of R is now 3.6.0
---------------------------------------------------------------------------------
-
-username@pelican:~$
-```
-
-The prompt on our system by default will start with the name of the computer as well as the current directory you are logged into. This prompt like most things on the system can be customized.
-```
-hostname:[directory]$
-```
 The `-X` option tells the system to [forward your X11 connection](https://kb.iu.edu/d/bdnt) which is necessary for running interactive graphics (eg showing an image, running a graphical editor program like emacs)
 
 # The command line interface (CLI)
 
-The command line provides ability to interact with the filesystem (files and folders) and run programs. A collection of UNIX utilitu
+The command line provides an interface to run tools, inteact with file system
 
 ## Directories and files
 
@@ -87,8 +56,9 @@ $ head -n 15 FILE.txt
 $ tail -n 12 FILE.txt
 ```
 
-**echo** Prints out
+**cat** - disply the contents of a files
 
-# Practice steps.
+# Problems
 
-1. Generate a new direction
+1. Make folders
+2. List files in folders

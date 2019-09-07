@@ -11,6 +11,7 @@ Monday 9/9
       - Introduce yourself and your research questions
   * Morning I:
       - Workshop UNIX - Introduction: Login, basic commands
+      - Workshop UNIX: Command line resources. Pipes. Useful UNIX
    * Morning II:
       - Lecture: Defining the problems
    * Lunch: Sub Station
@@ -21,9 +22,9 @@ Monday 9/9
 
 Tuesday 9/10
 =============
+   * 9:00 AM Start
    * Morning I:
-      - Workshop UNIX: Command line resources. Pipes. Useful UNIX + Bioinformatics Tools
-   *
+      -  Bioinformatics Tools
    * Afternoon I:
       - Datasets and workshop: Genome assembly
    * Afternoon II:

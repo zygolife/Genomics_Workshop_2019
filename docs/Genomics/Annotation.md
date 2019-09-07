@@ -20,4 +20,4 @@ The description of genome annotation will be focused around a particular tool we
 
 ## Submitting to GenBank
 
-### SBT file 
+### SBT file
