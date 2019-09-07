@@ -30,6 +30,5 @@
 ## Gene Tree Coalescent with ASTRAL
 
 ## Gene Tree and Species Tree Reconciliation
-
-** Notung **
+ **Notung**
 
