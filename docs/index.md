@@ -2,7 +2,7 @@
 
 ## Schedule
 
-[Planned Schedule](docs/Schedule.md)
+[Planned Schedule](docs/Schedule)
 
 ## Topics
 
