@@ -1,0 +1,6 @@
+* [Sequencing data](SequencingData.md)
+* [Aligning sequencinges](Alignment.md)
+* [Genome Annotation](Annotation.md)
+* [Genome Assembly](Assembly.md)
+* [Processing GFF data](GFF.md)
+* [Metagenomic approaches](Metagenomics.md)
