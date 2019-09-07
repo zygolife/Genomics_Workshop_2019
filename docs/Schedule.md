@@ -5,26 +5,36 @@
 
 Location: [Campbell Hall - ULB](https://campusmap.ucr.edu/?loc=ULB) 101
 
+Sunday 9/8
+==========
+   * 3:30 PM Genomics Building, UCR - First Floor conference Room
+     - Orientation, Cluster login testing, computer setup
+   * 5:00 PM Riverside Food Lab (Downtown Riverside - Market and Mission Inn Ave)
+   * 7:00 PM drinks at Brickwood
+
 Monday 9/9
 =========
-   * 9:00 AM Start
+  * 9:00 AM Start
       - Introduce yourself and your research questions
   * Morning I:
       - Workshop UNIX - Introduction: Login, basic commands
       - Workshop UNIX: Command line resources. Pipes. Useful UNIX
    * Morning II:
       - Lecture: Defining the problems
+      - Activity: sharing describe research goals
    * Lunch: Sub Station
    * Afternoon I:
       - Dataset intro: Genome and RNA sequence data, sequence Data formats.
    * Afternoon II:
       - Dataset intro: Using Illumina data
+   * 3:30 - 5PM - Lab tour with Jesus Pena
 
 Tuesday 9/10
 =============
    * 9:00 AM Start
    * Morning I:
-      -  Bioinformatics Tools
+      - Bioinformatics Tools
+   * Lunch
    * Afternoon I:
       - Datasets and workshop: Genome assembly
    * Afternoon II:
@@ -32,6 +42,7 @@ Tuesday 9/10
 
 Wednesday 9/11
 ==============
+   * 9:00 AM Start
    * Morning I:
       - Workshop UNIX: aligning short reads to genomes
    * Morning II:
@@ -44,26 +55,28 @@ Wednesday 9/11
 
 Thursday 9/12
 =============
+   * 9:00 AM Start
    * Morning I:
-      - Workshop: Protein domains and functional predictions
+      - Workshop: Protein annotation. Finding domains and functional predictions
    * Morning II:
       - Workshop UNIX: Summarizing tabular data in UNIX
       - BEDTools
    * Afternoon I:
       - Workshop: Orthology and comparative content
    * Afternoon II:
-      - Assessing and viz differences
+      - Workshop: Phylogeny and Phylogenomics with PHYling
 
 Evening/work on your own on short project
 
-
 Friday 9/13
 ================
+   * 9:30 start (Jason has appointment early)
    * Morning I:
       - Workshop: Filling in the UNIX gaps
    * Morning II:
       - Lecture: Data management practices
    * Afternoon I:
-      - Short project work
+      - Short time for some project work and revisiting challenges
    * Afternoon II:
       - Short project summary results
+   * 4:30 - Wrapup 
