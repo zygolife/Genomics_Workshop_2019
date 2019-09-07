@@ -3,29 +3,31 @@
 
 **Schedule**: September 9 - 13, 2019
 
-Location: Campbell Hall - ULB 101
+Location: [Campbell Hall - ULB](https://campusmap.ucr.edu/?loc=ULB) 101
 
 Monday 9/9
 =========
-   * Morning I:
+   * 9:00 AM Start
+      - Introduce yourself and your research questions
+  * Morning I:
       - Workshop UNIX - Introduction: Login, basic commands
    * Morning II:
       - Lecture: Defining the problems
+   * Lunch: Sub Station
    * Afternoon I:
-      - Dataset intro: Genome and RNA sequence data, Data formats.
+      - Dataset intro: Genome and RNA sequence data, sequence Data formats.
    * Afternoon II:
       - Dataset intro: Using Illumina data
 
 Tuesday 9/10
 =============
    * Morning I:
-      - Workshop UNIX: Cmdline resources. Pipes. Useful UNIX + Bioinformatics Tools
-   * Morning II:
-      - Introduce yourself and your research questions
+      - Workshop UNIX: Command line resources. Pipes. Useful UNIX + Bioinformatics Tools
+   *
    * Afternoon I:
       - Datasets and workshop: Genome assembly
    * Afternoon II:
-      - Assession genome completeness, genome assembly quality
+      - Assess genome completeness, genome assembly quality
 
 Wednesday 9/11
 ==============
@@ -35,20 +37,22 @@ Wednesday 9/11
       - Workshop UNIX: interrogating alignmets
    * Afternoon I:
       - Datasets and workshop: Genome annotation
+   * Break: 2:15-3:15 Magnus Nordborg Seminar
    * Afternoon II:
-      - Daatasets and workshop: Genome annotation vizualization and assessment
-      
+      - Datasets and workshop: Genome annotation visualization and assessment
+
 Thursday 9/12
 =============
    * Morning I:
       - Workshop: Protein domains and functional predictions
    * Morning II:
       - Workshop UNIX: Summarizing tabular data in UNIX
+      - BEDTools
    * Afternoon I:
       - Workshop: Orthology and comparative content
    * Afternoon II:
-      - Assessing and visuzaling differences
- 
+      - Assessing and viz differences
+
 Evening/work on your own on short project
 
 
