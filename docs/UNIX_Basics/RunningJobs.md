@@ -43,6 +43,11 @@ The simplest way to set these up is to think of array job as a line number in a 
 
 This uses the command `--array=1` or to specify a range with `--array=1-10`. These need not be continuous, so `--array=4,7,12-30` is all valid.
 
+# Requesting resources
+
+Either by command-line or encoded in the `#SBATCH` option in a script the user can request how much of a resources are needed. This includes memory, CPUs, runnning time.
+
+On all nodes there is also a local temporary disk space to enable fast writing of data that will be thrown away - often useful for certain kinds of indexing and in temporary files only needed for part of the analysis. This directory is `/scratch`.
 
 # A basic template
 

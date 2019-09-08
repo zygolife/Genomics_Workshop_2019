@@ -1,4 +1,4 @@
-## Interacting with Text Files
+# Interacting with Text Files
 
 UNIX and some of the commong scripting languages (Python, Perl, Ruby) are adept at interacting with and processing text files.
 
@@ -6,8 +6,7 @@ Reminder that  **more** and **less* are ways to read these files one page at a t
 
 **grep**
 
-
-### Text Editors
+# Text Editors
 
 **nano** also try **pico** - these are super simple text editors with build in menus. Useful on the command line.
 
@@ -21,3 +20,18 @@ There are many useful built in commands
 **emacs** - A powerful graphical or command-line editor. There are graphical menus.
 
    - Try `emacs -nw` to run emacs without graphical window. Useful on a command-line only login interface.
+
+# Formatted printing
+
+On bash can can use the **echo** and **printf** commands to print messages. These can be sent to the screen or to the
+
+**printf** can be used
+```
+printf "%-10s hello\n" "ab" # left formatted
+printf "%10s hello\n" "ab" # right formatted
+printf "%.2f formatted float\n" "12.333334"
+printf "%.2f\tformatted float\n" "12.333334"
+
+$ printf "%.2e formatted scientific\n" "120000.1"
+1.20e+05 formatted scientific
+```

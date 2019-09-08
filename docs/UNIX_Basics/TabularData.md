@@ -4,12 +4,18 @@ Data store in text files as tables with simple Tab (TSV) or comma (CSV) delimite
 Useful resources
 [Unix Data Tools](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch07.html#chapter-07)
 
+## sort to sort data
 [Sort notes](https://biodataprog.github.io/2018_programming-intro/Lectures/03_UNIX_DataProcessing.html#3)
-**sort** - sort data numerically, can sort by different columns in a multi-column file. [manual](http://man7.org/linux/man-pages/man1/sort.1.html)
+The command `sort` is used to sort data numerically. It can sort by different columns in a multi-column file. [Sort manual](http://man7.org/linux/man-pages/man1/sort.1.html)
 
-```sort filename ```
+To Sort a list by alphanumeric
+```
+sort data/UNIX/Athaliana_chr1_genenames.txt | head
+```
 
-```sort -r``` - reverse ordered list
+```
+sort -r data/UNIX/Athaliana_chr1_genenames.txt | head
+```
 
 ```sort -n``` - numeric sort
 
@@ -71,4 +77,20 @@ Print columns 3 and 7 in white space delimited data
 `awk '{print $3,$7}' data/UNIX/`
 
 
-**
+# Random numbers
+
+Sometimes we need to generate random numbers. This can be done with different commands.
+
+```
+shuf -i 0-1000 -n 10
+120
+280
+110
+324
+621
+211
+851
+70
+755
+108
+```

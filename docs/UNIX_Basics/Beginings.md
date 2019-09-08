@@ -1,6 +1,12 @@
 # Getting started
 
 This workshop will emphasize UNIX skills to support running bioinformatics tools for genomic and evolutionary analysis.
+
+
+# Using the HPCC Cluster.
+
+For simplicity this tutorial assumes access to the [UCR HPCC](http://hpcc.ucr.edu) system, but otherwise you can run nearly everything on your own unix system that could be Ubuntu, OSX, or CentOS, Debian. The aspects showing how to use the queuing system.
+
  To login to the cluster we need to use ssh client. This allows secure communication with the cluster. The UCR cluster is accessed using the host `cluster.hpcc.ucr.edu`
 
 ```
@@ -13,7 +19,7 @@ The `-X` option tells the system to [forward your X11 connection](https://kb.iu.
 
 # The command line interface (CLI)
 
-The command line provides an interface to run tools, inteact with file system
+The command line provides an interface to interact with file system, and to execute commands starting applications. You can monitor processes running on a computer system with tools like `top` and ``
 
 ## Directories and files
 
@@ -56,7 +62,17 @@ $ head -n 15 FILE.txt
 $ tail -n 12 FILE.txt
 ```
 
-**cat** - disply the contents of a files
+**cat** - display the contents of a files
+
+
+# Setup your environment with access to the data
+
+Let's checkout this workshop and data from github. The repository is available at this URL https://github.com/zygolife/Genomics_Workshop_2019 and you can also checkout a copy of this to your local machine or on the cluster.
+
+```
+$ git clone https://github.com/zygolife/Genomics_Workshop_2019.git
+```
+This will heckot
 
 # Problems
 

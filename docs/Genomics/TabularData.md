@@ -23,5 +23,3 @@ There are extended version of the format which has additional columns to describ
 # Tools for working with Tabular data
 
 **BEDTools** The [BEDTools](https://bedtools.readthedocs.io/en/latest/) provides lots of examples
-
-**

@@ -31,8 +31,11 @@ As a job - here is a script called `sort.sh`, you would submit it as `sbatch sor
 #!/usr/bin/bash
 #SBATCH -p short -N 1 -n 8 --mem 8gb --out sort_sam.log
 module load samtools
-CPU=
-samtools sort --threads $CPU
+CPUS=$SLURM_CPUS_ON_NODE
+if [ -z $CPUS ]; then
+ CPUS=1
+fi
+samtools sort --threads $CPU -o sorted.bam -T /scratch -
 
 
 ## SAMTools

@@ -17,16 +17,16 @@ Monday 9/9
   * 9:00 AM Start
       - Introduce yourself and your research questions
   * Morning I:
-      - Workshop UNIX - Introduction: Login, basic commands
-      - Workshop UNIX: Command line resources. Pipes. Useful UNIX
+      - [Workshop UNIX I](UNIX_Basics/Beginnings]): Introduction: Login, basic commands
+      - [Workshop UNIX II](UNIX_Basics/RunningTools): Command line resources. Pipes. Useful UNIX
    * Morning II:
       - Lecture: Defining the problems
       - Activity: sharing describe research goals
    * Lunch: Sub Station
    * Afternoon I:
-      - Dataset intro: Genome and RNA sequence data, sequence Data formats.
+      - [Dataset intro](Genomics/SequencingData): Genome and RNA sequence data, sequence Data formats.
    * Afternoon II:
-      - Dataset intro: Using Illumina data
+      - [Workshop Genomics I](Genomics/ShortReadAlignment): Using Illumina data
    * 3:30 - 5PM - Lab tour with Jesus Pena
 
 Tuesday 9/10
@@ -79,4 +79,4 @@ Friday 9/13
       - Short time for some project work and revisiting challenges
    * Afternoon II:
       - Short project summary results
-   * 4:30 - Wrapup 
+   * 4:30 - Wrapup
