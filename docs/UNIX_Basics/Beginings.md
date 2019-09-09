@@ -94,9 +94,11 @@ $ git pull
 $ cd data
 $ bash download_fungidb.sh
 ```
+
 This will checkout a copy of the data and text for the course. As I update the data or text you can synchronize your copy by issuing `git pull` in the folder that was created.
 
 # Problems
 
-1. Make folders
+1. Make a series of folders
 2. List files in folders
+3. Count the number of lines in the file `data/UNIX/Nc3H.expr.tab` is this same as number of lines in `data/UNIX/Nc20H.expr.tab`
