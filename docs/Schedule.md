@@ -16,7 +16,7 @@ Monday 9/9
 =========
   * 9:00 AM Start
       - Introduce yourself and your research questions
-  * [Workshop UNIX I](UNIX_Basics/Beginnings): Introduction: Login, basic commands
+  * [Workshop UNIX I](UNIX_Basics/Beginings): Introduction: Login, basic commands
   * [Workshop UNIX II](UNIX_Basics/RunningTools): Command line resources. Pipes. Useful UNIX
   * [Workshop UNIX III](UNIX_Basics/ProgrammingBash): Looping through data and files
   * Morning II (30 min):
