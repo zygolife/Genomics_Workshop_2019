@@ -1,6 +1,7 @@
 # Alignment
 
-Sequence alignment to a reference is critical for assessing how sequences
+Sequence alignment to a reference is critical to incorporating 
+
 ## Short Read alignment
 
 

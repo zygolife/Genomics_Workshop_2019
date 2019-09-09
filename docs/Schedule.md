@@ -16,25 +16,25 @@ Monday 9/9
 =========
   * 9:00 AM Start
       - Introduce yourself and your research questions
-  * Morning I:
-      - [Workshop UNIX I](UNIX_Basics/Beginnings): Introduction: Login, basic commands
-      - [Workshop UNIX II](UNIX_Basics/RunningTools): Command line resources. Pipes. Useful UNIX
-   * Morning II:
-      - Lecture: Defining the problems
-      - Activity: sharing describe research goals
-   * Lunch: Sub Station
-   * Afternoon I:
-      - [Dataset intro](Genomics/SequencingData): Genome and RNA sequence data, sequence Data formats.
-   * Afternoon II:
+  * [Workshop UNIX I](UNIX_Basics/Beginnings): Introduction: Login, basic commands
+  * [Workshop UNIX II](UNIX_Basics/RunningTools): Command line resources. Pipes. Useful UNIX
+  * [Workshop UNIX III](UNIX_Basics/ProgrammingBash): Looping through data and files
+  * Morning II (30 min):
+    - Group Activity: sharing describe research goals
+  * 12:30 PM Lunch: Sub Station
+  * 1:30 PM Afternoon I:
+    - [Sequencing Data](Genomics/SequencingData): Genome and RNA sequence data, sequence Data formats.
+  * Afternoon II:
       - [Workshop Genomics I](Genomics/ShortReadAlignment): Using Illumina data
    * 3:30 - 5PM - Lab tour with Jesus Pena
 
 Tuesday 9/10
 =============
    * 9:00 AM Start
-   * Morning I:
+   * [Workshop UNIX IV](UNIX_Basics/TabularData): Summarizing and processing tabular data in UNIX
+   * [Workshop G]
       - Bioinformatics Tools
-   * Lunch
+   * Lunch 12:30 PM - Glen Mor
    * Afternoon I:
       - Datasets and workshop: Genome assembly
    * Afternoon II:
@@ -47,6 +47,7 @@ Wednesday 9/11
       - Workshop UNIX: aligning short reads to genomes
    * Morning II:
       - Workshop UNIX: interrogating alignmets
+   * Lunch 12:30 PM - HUB
    * Afternoon I:
       - Datasets and workshop: Genome annotation
    * Break: 2:15-3:15 Magnus Nordborg Seminar
@@ -58,9 +59,9 @@ Thursday 9/12
    * 9:00 AM Start
    * Morning I:
       - Workshop: Protein annotation. Finding domains and functional predictions
-   * Morning II:
-      - Workshop UNIX: Summarizing tabular data in UNIX
+   *
       - BEDTools
+  * Lunch 12:30 PM -
    * Afternoon I:
       - Workshop: Orthology and comparative content
    * Afternoon II:
@@ -75,6 +76,7 @@ Friday 9/13
       - Workshop: Filling in the UNIX gaps
    * Morning II:
       - Lecture: Data management practices
+  * Lunch 12:30 PM -
    * Afternoon I:
       - Short time for some project work and revisiting challenges
    * Afternoon II:

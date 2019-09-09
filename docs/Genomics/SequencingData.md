@@ -67,4 +67,8 @@ $ curl ftp://ftp.ncbi.nih.gov/blast/db/FASTA/yeast.nt.gz
 
 Data files are large, with the billions of bases available in the global sequence databases and or in a single Illumina sequencing lane.  Several tools are used to compress these files and the extension of the files tells you what tool was used to create it or will be needed to uncompress it.
 
-# Short Read data
+# Genome and RNASeq Read data
+
+Typically Illumina and 
+
+#

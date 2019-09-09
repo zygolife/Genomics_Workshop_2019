@@ -34,9 +34,15 @@ $ mkdir Alpha/Beta/Zeta # will give error
 $ mkdir -p Alpha/Beta/Zeta # will not give error
 ```
 
-***rmdir*** Remove a folder. Only works if folder is empty
+**rmdir** Remove a folder. Only works if folder is empty
 
-***rm*** Remove a file or folder. This is command to be careful with. To delete a folder that contains many folders.
+**rm** Remove a file or folder. This is command to be careful with. To delete a folder that contains many folders you can use recursive remove.
+
+***WARNING*** be careful, UNIX does not save backups of files you delete.
+
+```rm -rf folder``` - recursively
+
+## Reading Files
 
 **more** See the contents of a text file, one page at a time. Go to the next page with 'space'. Can search for a specific text with slash (`/`).
 
@@ -62,17 +68,33 @@ $ head -n 15 FILE.txt
 $ tail -n 12 FILE.txt
 ```
 
-**cat** - display the contents of a files
+**cat** - display the contents of a file or files, can use this to concatenate a series of files into one.
+
+```bash
+cat file1.txt file2.txt file[789].txt > allfiles.txt
+```
+
+**grep** - Find lines in a file that match a pattern.
+
+```bash
+grep chr1
+
 
 
 # Setup your environment with access to the data
 
-Let's checkout this workshop and data from github. The repository is available at this URL https://github.com/zygolife/Genomics_Workshop_2019 and you can also checkout a copy of this to your local machine or on the cluster.
+Checkout this workshop and data from github. The repository is available at this URL https://github.com/zygolife/Genomics_Workshop_2019 and you can also checkout a copy of this to your local machine or on the cluster.
 
-```
+```bash
 $ git clone https://github.com/zygolife/Genomics_Workshop_2019.git
+$ cd Genomics_Workshop_2019
+# when you want to synchronize
+$ git pull
+# download some other Datasets
+$ cd data
+$ bash download_fungidb.sh
 ```
-This will heckot
+This will checkout a copy of the data and text for the course. As I update the data or text you can synchronize your copy by issuing `git pull` in the folder that was created.
 
 # Problems
 
