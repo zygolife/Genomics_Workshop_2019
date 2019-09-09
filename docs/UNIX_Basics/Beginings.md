@@ -52,11 +52,7 @@ popd # will go back to folder /bigdata/stajichlab/shared/projects
 pwd
 ```
 
-
-
 **pwd** Print the current working directory
-
-
 
 **rmdir** Remove a folder. Only works if folder is empty
 
@@ -104,7 +100,40 @@ cat file1.txt file2.txt file[789].txt > allfiles.txt
 grep CM002240 data/genomic/Ncrassa.gff
 ```
 
+**cp** - Copy file
+```bash
+cp file1 newfile # copy file
+cp -r dir1 dir2  # copy directory recursively
+```
 
+**mv** - Rename file
+```bash
+mv file1.txt file_newname.txt
+mv dir2/file1.txt dir3/file_newname.txt
+```
+
+**ln** - symlink "ln -s"
+```bash
+ln -s file1.fasta filename.fa
+```
+
+**find** - find files by name or other criteria
+
+Specify starting folder to search and then find by pattern
+
+```BASH
+find /srv/project/db/CAZY -name "dbCAN*"
+cd /bigdata/stajichlab/shared/projects/ZyGoLife/Bacteria_associates/binned_genomes
+find . -name '*.aa.fasta'
+```
+
+**man** - Manual pages
+
+```
+man find
+```
+
+Environment variables.
 
 # Setup your environment with access to the data
 
