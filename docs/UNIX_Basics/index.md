@@ -1,6 +1,6 @@
 This folder provides info on several topics
 
-1. [Beginning Steps](Beginnings)
+1. [Beginning Steps](Beginings)
 2. [Running Programs](RunningTools)
 3. [Inteacting with Text Files](TextFiles)
 4. [Iterating and Loops](Iterating)
