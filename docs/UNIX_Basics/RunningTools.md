@@ -31,7 +31,7 @@ The output from command1 goes to command 2.
 ```bash
 command1 | command2
 cat file.txt | wc -l
-grep "^NCU"
+grep "^NCU" file.txt | wc -l
 ```
 
 # Shell commands and useful keys

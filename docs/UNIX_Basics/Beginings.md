@@ -19,7 +19,7 @@ The `-X` option tells the system to [forward your X11 connection](https://kb.iu.
 
 # The command line interface (CLI)
 
-The command line provides an interface to interact with file system, and to execute commands starting applications. You can monitor processes running on a computer system with tools like `top` and ``
+The command line provides an interface to interact with file system, and to execute commands starting applications. You can monitor processes running on a computer system with tools like `top` and `ps`
 
 ## Directories and files
 
