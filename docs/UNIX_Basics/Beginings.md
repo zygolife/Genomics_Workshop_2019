@@ -34,6 +34,30 @@ $ mkdir Alpha/Beta/Zeta # will give error
 $ mkdir -p Alpha/Beta/Zeta # will not give error
 ```
 
+**cd** Change directory.
+
+```bash
+mkdir dir1
+cd dir1 # go into a directory
+cd .. # go back a directory
+cd /bigdata/stajichlab/shared/projects # go to a folder
+cd ZyGoLife # go to another folder
+cd - # go back to the last folder
+pwd
+# will show /bigdata/stajichlab/shared/projects
+pushd /srv/projects/db/AAFTF_DB/ # push a folder on the stack
+cd ..
+pwd
+popd # will go back to folder /bigdata/stajichlab/shared/projects
+pwd
+```
+
+
+
+**pwd** Print the current working directory
+
+
+
 **rmdir** Remove a folder. Only works if folder is empty
 
 **rm** Remove a file or folder. This is command to be careful with. To delete a folder that contains many folders you can use recursive remove.
@@ -77,7 +101,8 @@ cat file1.txt file2.txt file[789].txt > allfiles.txt
 **grep** - Find lines in a file that match a pattern.
 
 ```bash
-grep chr1
+grep CM002240 data/genomic/Ncrassa.gff
+```
 
 
 
@@ -102,3 +127,4 @@ This will checkout a copy of the data and text for the course. As I update the d
 1. Make a series of folders
 2. List files in folders
 3. Count the number of lines in the file `data/UNIX/Nc3H.expr.tab` is this same as number of lines in `data/UNIX/Nc20H.expr.tab`
+4. Practice with pushd / popd
