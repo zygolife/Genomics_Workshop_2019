@@ -79,7 +79,7 @@ module load sratoolkit
 module load miniconda3
 source activate mosdepth
 ACC=ERR1308581
-parallel-fastq-dump --sra-id $ACC --threads $CPU --gzip --split-files --out $ACC
+parallel-fastq-dump --sra-id $ACC --threads $CPU --out $ACC
 ```
 
 ## Data Compression
