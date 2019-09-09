@@ -124,5 +124,3 @@ after the last '.' in the filename.
 module load samtools
 parallel -j 10 samtools flagstat {} \> {.}.stats ::: *.bam
 ```
-
-#
