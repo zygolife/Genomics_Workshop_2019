@@ -25,7 +25,7 @@ Monday 9/9
   * 1:30 PM Afternoon I:
     - [Sequencing Data](Genomics/SequencingData): Genome and RNA sequence data, sequence Data formats.
   * Afternoon II:
-      - [Workshop Genomics I](Genomics/ShortReadAlignment): Using Illumina data
+      - [Text Files](Genomics/TextFiles): Processing Text files and editors.
    * 3:30 - 5PM - Lab tour with Jesus Pena
 
 Tuesday 9/10

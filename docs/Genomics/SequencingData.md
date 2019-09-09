@@ -35,7 +35,7 @@ $ grep '^>' myfile.fasta | wc -l
 If you wanted to count the number of residues or nucleotide bases in a file you can use grep to skip the lines which are identifiers and then strip off the white space (eg spaces or newlines are ignored) and count the total length of the sequence. The `grep -v` command means show only lines which DO NOT match the pattern. The `sed` command support text translation and manipulation with [regular expressions](http://REGULAREXPRESSIONSWIKI). The `wc -c` reports the number of characters instead of number of lines.
 
 ```bash
-$ grep -v '^>' | seq 's/\s//g | wc -c'
+$ grep -v '^>' | perl -p -e 's/\s//g' | wc -c
 ```
 
 ### FASTQ format
@@ -61,7 +61,7 @@ To put these data on the server for processing you will need to copy it over.
 `curl` is a typical tool install on OSX, UNIX. It is a command line URL retriever. Here are some example usage.
 
 ```bash
-$ curl ftp://ftp.ncbi.nih.gov/blast/db/FASTA/yeast.nt.gz
+$ curl -O ftp://ftp.ncbi.nih.gov/blast/db/FASTA/yeast.nt.gz
 ```
 
 To download data from the sequence read archive of NCBI you can use the `fastq-dump` tool part of the [sratoolkit](https://www.ncbi.nlm.nih.gov/sra/docs/toolkitsoft/) package. This will download the SRA data file and convert it to fastq.
