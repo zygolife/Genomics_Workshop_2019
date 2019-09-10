@@ -130,7 +130,7 @@ do
   SORTED=$ASM/${STRAIN}.sorted.fasta
   STATS=$ASM/${STRAIN}.sorted.stats.txt
   LEFTIN=$FASTQ/${BASE}_1.fastq.gz
-  RIHGHTIN=$FASTQ/${BASE}_2.fastq.gz
+  RIGHTIN=$FASTQ/${BASE}_2.fastq.gz
   LEFTTRIM=$WORKDIR/${BASE}_1P.fastq.gz
   RIGHTTRIM=$WORKDIR/${BASE}_2P.fastq.gz
   LEFT=$WORKDIR/${BASE}_filtered_1.fastq.gz
