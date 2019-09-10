@@ -31,9 +31,9 @@ Monday 9/9
 Tuesday 9/10
 =============
    * 9:00 AM Start
+   * [Workshop UNIX IV](UNIX_Basics/RunningJobs)
+   * [Workshop Genomics I](Genomics/Assembly) - Genome assembly
    * [Workshop UNIX IV](UNIX_Basics/TabularData): Summarizing and processing tabular data in UNIX
-   * [Workshop G]
-      - Bioinformatics Tools
    * Lunch 12:30 PM - Glen Mor
    * Afternoon I:
       - Datasets and workshop: Genome assembly

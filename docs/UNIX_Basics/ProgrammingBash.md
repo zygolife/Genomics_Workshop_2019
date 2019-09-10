@@ -28,7 +28,7 @@ else
 fi
 ```
 
-Can also set up multiple conditionals
+Can also set up multiple conditionals and test if variables contain certain values.
 
 ```bash
 
@@ -38,6 +38,13 @@ elif [[ $target == "speciesB" ]]; then
   grep $target inputfile > speciesB_hits.txt
 else
   echo "unknown"
+fi
+```
+
+Can test if a variable is empty (eg no value was set) with `-z $VARIABLE`
+```bash
+if [ -z $VARIABLE ]; then
+  echo "variable \$VARIABLE is empty"
 fi
 ```
 

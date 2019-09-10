@@ -8,7 +8,7 @@ The HPCC system provides a [useful explanation and tutorial](http://hpcc.ucr.edu
 
 Startup an interactive session with 1 cpu, 2gb of RAM. Run on the 'short' queue which gives a maximum of 2 hrs.
 
-```
+```bash
 $ srun -N 1 -n 1 --mem 2gb -p short --pty bash -l
 $ module load ncbi-blast
 $ curl -O ftp://ftp.ncbi.nih.gov:/blast/db/FASTA/swissprot.gz
@@ -19,7 +19,7 @@ $ makeblastdb -in swissprot -dbtype prot
 # Submitting a job
 
 Using an editor (emacs,nano,vi) - create a script that has this content. Call it `makeblastdb.sh`
-```
+```bash
 #!/usr/bin/bash
 #SBATCH -p short -N 1 -n 1 --mem 2gb -out make_swissprot_blast.log
 module load ncbi-blast/2.9.0+
@@ -29,7 +29,7 @@ makeblastdb -in swissprot -dbtype prot
 ```
 
 Now submit the job via slurm using the command line
-```
+```bash
 $ sbatch makeblastdb.db
 ```
 
@@ -45,13 +45,13 @@ This uses the command `--array=1` or to specify a range with `--array=1-10`. The
 
 # Requesting resources
 
-Either by command-line or encoded in the `#SBATCH` option in a script the user can request how much of a resources are needed. This includes memory, CPUs, runnning time.
+Either by command-line or encoded in the `#SBATCH` option in a script the user can request how much of a resources are needed. This includes memory, CPUs, and maximum run time.
 
 On all nodes there is also a local temporary disk space to enable fast writing of data that will be thrown away - often useful for certain kinds of indexing and in temporary files only needed for part of the analysis. This directory is `/scratch`.
 
 # A basic template
 
-```
+```bash
 #!/bin/bash
 #SBATCH --nodes=1
 #SBATCH --ntasks=1 # number of CPUS
@@ -82,11 +82,11 @@ fi
 ```
 
 Some other SBATCH options include way to set the memory proportional to the number of CPUs allocated.
-```
+```bash
 # SBATCH --mem-per-cpu=1G
 ```
 Specify an email to be sent when a job is finished
-```
+```bash
 #SBATCH --mail-user=YOUREMAIL
 #SBATCH --mail-type=ALL
 ```
