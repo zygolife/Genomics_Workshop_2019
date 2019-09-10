@@ -21,11 +21,19 @@ $ makeblastdb -in swissprot -dbtype prot
 Using an editor (emacs,nano,vi) - create a script that has this content. Call it `makeblastdb.sh`
 ```bash
 #!/usr/bin/bash
-#SBATCH -p short -N 1 -n 1 --mem 2gb -out make_swissprot_blast.log
+#SBATCH -p short -N 1 -n 1 --mem 2gb --out make_swissprot_blast.log
+
 module load ncbi-blast/2.9.0+
 curl -O ftp://ftp.ncbi.nih.gov:/blast/db/FASTA/swissprot.gz
-pigz -d swissprot.gz
-makeblastdb -in swissprot -dbtype prot
+pigz -dc swissprot.gz | makeblastdb -dbtype prot -in - -out swissprot -title swissprot -parse_seqids
+
+curl -O ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
+pigz -dc uniprot_sprot.fasta.gz | makeblastdb -in - -dbtype prot -out uniprot_sprot -title uniprot_sprot -parse_seqids
+
+blastdbcmd -entry D3ZS28.4 -db ./swissprot -out query.fa
+blastp -query query.fa -db swissprot -out query-vs-swissprot.BLASTP -evalue 1e-10 -num_threads 2
+blastp -query query.fa -db uniprot_sprot -out query-vs-uniprot_swissprot.BLASTP.tab -evalue 1e-10 -num_threads 2 -outfm
+t 7
 ```
 
 Now submit the job via slurm using the command line
