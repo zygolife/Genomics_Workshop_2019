@@ -90,7 +90,7 @@ The beginnings of this script are going to be listed here and then I will provid
 
 ```bash
 #!/usr/bin/bash
-#SBATCH -p short -N 1 -n 8 --mem 64gb --out logs/AAFTF.log
+#SBATCH -p short -N 1 -n 8 --mem 64gb --out logs/AAFTF.%a.log
 
 MEM=64
 CPU=$SLURM_CPUS_ON_NODE
