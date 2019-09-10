@@ -35,10 +35,8 @@ Tuesday 9/10
    * [Workshop Genomics I](Genomics/Assembly) - Genome assembly
    * [Workshop UNIX IV](UNIX_Basics/TabularData): Summarizing and processing tabular data in UNIX
    * Lunch 12:30 PM - Glen Mor
-   * Afternoon I:
-      - Datasets and workshop: Genome assembly
-   * Afternoon II:
-      - Assess genome completeness, genome assembly quality
+   * Blobplots
+   * Annotation
 
 Wednesday 9/11
 ==============
