@@ -167,7 +167,7 @@ module load cdbfasta
 cdbfasta database.fasta
 
 # to retrieve
-echo "A" | cdbyank databasa.fasta.idx  > A.fa
+echo "A" | cdbyank databasa.fasta.cidx  > A.fa
 cat list_of_ids | cdbyank database.fasta.cidx > retrieved.fa
 ```
 
@@ -303,5 +303,5 @@ CTCTATTTCATCACGTTCGAGAAGATCGCTACGCTTATCGAATTCCAGATTATCATTGTCCGCTTCAACTTCTAGAGAAA
 To retrieve this sequence from the indexed file use
 ```
 module load samtools
-samtools fqidx READFILE.fq.gz ACCESSION
+samtools fqidx READFILE.fq.gz ERR1309286.4
 ```

@@ -12,7 +12,7 @@ https://trace.ncbi.nlm.nih.gov/Traces/sra/?study=SRP148808
 Go to examples/transcriptome
 
 Run pipeline/00_initialize.sh
-```BASH
+```bash
 bash pipeline/00_initialize.sh
 ```
 This will download Rdel_transcripts.fasta from [FungiDB](https://fungidb.org/common/downloads/Current_Release/RdelemarRA99-880/fasta/data/). This is the transcripts for Rhizopus delemar. The script will also setup symlink to existing data on cluster or optionally download additional datasets from SRA. If you want to add more steps to download additional raw data from SRA you can follow [the link](https://trace.ncbi.nlm.nih.gov/Traces/sra/?study=SRP148808) to the SRA Project and specify additional accession numbers for downloading.
@@ -22,10 +22,9 @@ This will download Rdel_transcripts.fasta from [FungiDB](https://fungidb.org/com
 First need to index Transcript database. This is accomplished in script
 `pipeline/01_index.sh`
 
-```BASH
+```bash
 #!/bin/bash
 #SBATCH --nodes 1 --ntasks 1 -p short --mem 4gb --out logs/init.log
-
 mkdir -p logs
 module load kallisto
 DB=Rdel_transcripts.fasta
