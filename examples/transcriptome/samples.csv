@@ -1,0 +1,7 @@
+SampleId,Condition,Replicate,Read1,Read2
+24p,24hr,1,SRR7208623_1.fastq.gz,SRR7208623_2.fastq.gz
+24a,24hr,2,SRR7208621_1.fastq.gz,SRR7208621_2.fastq.gz
+24,24hr,3,SRR7208619_1.fastq.gz,SRR7208619_2.fastq.gz
+3p,3hr,1,SRR7208587_1.fastq.gz,SRR7208587_2.fastq.gz
+3a,3hr,2,SRR7208584_1.fastq.gz,SRR7208584_2.fastq.gz
+3,3hr,3,SRR7208583_1.fastq.gz,SRR7208583_2.fastq.gz
