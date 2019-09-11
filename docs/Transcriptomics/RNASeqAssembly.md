@@ -15,7 +15,7 @@ transcripts to better separate paralogs and can speed up the process.
 
 ## Data sets
 
-Try the data in examples/transcriptome
+Try the data in examples/transcriptome. The script `trinity_Rs_scf10.sh` has the following steps to generate a de novo assembly of the transcriptome.
 
 ```bash
 #SBATCH -p intel -N 1 -n 24 --mem 64gb --out trinity.log
@@ -25,7 +25,14 @@ CPUS=$SLURM_CPUS_ON_NODE
 if [ -z $CPUS ]; then
  CPUS=1
 fi
-Trinity --left Rs_1.fq.gz --right Rs_2.fq.gz --CPU $CPUS --max_memory $MEM --seqType fq
+Trinity --left Rs_1.fq.gz --right Rs_2.fq.gz --CPU $CPUS --max_memory $MEM --seqType fq --output trinity_out_scf10
+```
+
+To identify putative ORFs you can use [TransDecoder](https://github.com/TransDecoder/TransDecoder/wiki).
+
+```BASH
+module load transdecoder
+TransDecoder.LongOrfs -t trinity_out_scf10/Trinity.fasta
 ```
 
 ## Considerations
