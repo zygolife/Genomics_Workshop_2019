@@ -14,69 +14,53 @@ Sunday 9/8
 
 Monday 9/9
 =========
-  * 9:00 AM Start
-      - Introduce yourself and your research questions
-  * [Workshop UNIX I](UNIX_Basics/Beginings): Introduction: Login, basic commands
-  * [Workshop UNIX II](UNIX_Basics/RunningTools): Command line resources. Pipes. Useful UNIX
-  * [Workshop UNIX III](UNIX_Basics/ProgrammingBash): Looping through data and files
-  * Morning II (30 min):
-    - Group Activity: sharing describe research goals
+  * 9:00 AM - Introduce yourself and your research questions
+  * [UNIX: Beginnings](UNIX_Basics/Beginnings): Introduction: Login, basic commands
+  * [UNIX: Running Tools](UNIX_Basics/RunningTools): Command line resources. Pipes. Useful UNIX
+  * [UNIX: Programming Bash](UNIX_Basics/ProgrammingBash): Looping through data and files
+  * Group Activity: sharing describe research goals (30 min)
   * 12:30 PM Lunch: Sub Station
-  * 1:30 PM Afternoon I:
-    - [Sequencing Data](Genomics/SequencingData): Genome and RNA sequence data, sequence Data formats.
-  * Afternoon II:
-      - [Text Files](Genomics/TextFiles): Processing Text files and editors.
-   * 3:30 - 5PM - Lab tour with Jesus Pena
+  * 1:30 PM [Genomics: Sequencing Data Into](Genomics/SequencingData): Genome and RNA sequence data, sequence Data formats.
+  * [Genomics: Processing Text Files](Genomics/TextFiles): Processing Text files and editors.
+  * 3:30 - 5PM - Lab tour with Jesus Pena
 
 Tuesday 9/10
 =============
-   * 9:00 AM Start
-   * [Workshop UNIX IV](UNIX_Basics/RunningJobs)
-   * [Workshop Genomics I](Genomics/Assembly) - Genome assembly
-   * [Workshop UNIX IV](UNIX_Basics/TabularData): Summarizing and processing tabular data in UNIX
+   * 9:00 AM [UNIX: Running Cluster Jobs](UNIX_Basics/RunningJobs)
+   * [Genomics: Genome Assembly](Genomics/Assembly)
+   * [UNIX: Tabular Data](UNIX_Basics/TabularData): Summarizing and processing tabular data in UNIX
    * Lunch 12:30 PM - Glen Mor
-   * Blobplots
-   * Annotation
+   * Workshop Genome Assembly
 
 Wednesday 9/11
 ==============
-   * 9:00 AM Start
-   * Morning I:
-      - Workshop UNIX: aligning short reads to genomes
-   * Morning II:
-      - Workshop UNIX: interrogating alignmets
+   * 9:00 AM [Transcriptomics: RNASeq Assembly](Transcriptomics/RNASeqAssembly): Assembling Transcripts from RNASeq
+   * [Transcriptomics: Quantifying Gene Expression with RNASeq](Transcriptomics/RNASeq_AlignQuant): Quantifying Gene Expression
+   * [Genomics: Getting sequences from databases](Genomics/GettingSequences)
    * Lunch 12:30 PM - HUB
-   * Afternoon I:
-      - Datasets and workshop: Genome annotation
+   * 1:30 PM  [Genomics: Genome Annotation](Genomics/Annotation)
    * Break: 2:15-3:15 Magnus Nordborg Seminar
-   * Afternoon II:
-      - Datasets and workshop: Genome annotation visualization and assessment
+
 
 Thursday 9/12
 =============
    * 9:00 AM Start
-   * Morning I:
-      - Workshop: Protein annotation. Finding domains and functional predictions
-   *
-      - BEDTools
+   * [Genomics: Protein Domain identification](Genomics/ProteinAnnotation)
+   * [Evolutionary Genomics: Comparative Genomics](Evolutionary_Genomics/ComparativeGenomics)
   * Lunch 12:30 PM -
-   * Afternoon I:
-      - Workshop: Orthology and comparative content
-   * Afternoon II:
-      - Workshop: Phylogeny and Phylogenomics with PHYling
+  * [Evolutionary Genomics: Buidling species trees with PHYling](Evolutionary_Genomics/PHYling)
+  * [Genomics: Variant and Polymorphism identification](Genomics/Variants)
+  * Dinner Tio's Tacos
 
 Evening/work on your own on short project
 
 Friday 9/13
 ================
-   * 9:30 start (Jason has appointment early)
-   * Morning I:
-      - Workshop: Filling in the UNIX gaps
-   * Morning II:
-      - Lecture: Data management practices
-  * Lunch 12:30 PM -
-   * Afternoon I:
-      - Short time for some project work and revisiting challenges
+   * 9:00 Microbiome (Nat)
+   * [Genomics: Metagenomics](Genomics/Metagenomics)
+   * Lunch 12:30 PM
+   * Project work and revisiting challenges
    * Afternoon II:
       - Short project summary results
    * 4:30 - Wrapup
+   * Group Dinner Out
