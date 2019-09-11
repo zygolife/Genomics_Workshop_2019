@@ -51,7 +51,7 @@ do
 
     funannotate predict --cpus $CPU --keep_no_stops --SeqCenter $SEQCENTER \
 	--busco_db $BUSCOPATH/$BUSCO --strain "$STRAIN" \
-	-i $GENOMEFILE --name $BASE \
+	-i $GENOMEFILE --name $LOCUS \
 	--protein_evidence $FUNANNOTATE_DB/uniprot_sprot.fasta  \
 	--min_training_models 100 \
 	-s "$SPECIES"  -o $OUTDEST --busco_seed_species $SEED_SPECIES
