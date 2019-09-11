@@ -2,7 +2,7 @@
 
 The HPCC system provides a [useful explanation and tutorial](http://hpcc.ucr.edu/manuals_linux-cluster_jobs.html) on running jobs on the system. A job is how to run a set of commands and the machine it is sent to on the cluster will be assigned by the queueing system.
 
-![https://implement.pt/img/hpc_job_sched.png]
+![hpcJob](https://implement.pt/img/hpc_job_sched.png)
 
 # Interactive Job session
 
