@@ -11,7 +11,6 @@ module unload ncbi-blast
 module load ncbi-blast/2.2.31+
 
 export AUGUSTUS_CONFIG_PATH=$(realpath lib/augustus/config)
-mkdir -p $TEMP
 
 SEED_SPECIES="anidulans"
 BUSCOPATH=/srv/projects/db/BUSCO/v9
