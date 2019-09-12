@@ -56,7 +56,7 @@ Evening/work on your own on short project
 
 Friday 9/13
 ================
-   * 9:00 Microbiome (Nat)
+   * 9:00-10:30 [Microbiome Data Processing (using AMPtk) ](Genomics/AMPtk) 
    * [Genomics: Metagenomics](Genomics/Metagenomics)
    * Lunch 12:30 PM
    * Project work and revisiting challenges

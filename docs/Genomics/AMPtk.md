@@ -1,4 +1,4 @@
-# :koala: NGS Amplicon Data Processing using AMPtk 
+# NGS Amplicon Data Processing using AMPtk 
 
 We will use [AMPtk](https://amptk.readthedocs.io/en/latest/index.html) to process NGS amplicon data.
 
@@ -21,7 +21,7 @@ cd ~/bigdata/
 mkdir -p AMPtk/illumina/
 cd AMPtk/illumina/
 # create a symlink to the datasets
-ln -s /shared/projects/Microbiome/data/Antarctica_Endolithic/ITS/illumina/*8* .
+ln -s ~/shared/projects/Microbiome/data/Antarctica_Endolithic/ITS/illumina/*8* .
 cd ..
 ```
 
@@ -91,7 +91,9 @@ You can use `nano` editor to simply create `01_AMPtk_ITS.sh` script by copyign f
 nano pipeline/01_AMPtk_ITS.sh
 ```
 
-The beginnings of this script are going to be listed here and then I will provide the entire [script here](need to update this).
+The beginnings of this script are going to be listed here. You will copy all 4 steps into `01_AMPtk_ITS.sh` and run the script.
+
+Note: In this tutorial, we used 10 input files including forward read (_R1) and reverse read (_R2). After the run is completed, we will end up with one big file combining all of the samples and all the `_R1` and `_R2` will be merged.
 
 ```bash
 #!/usr/bin/bash
@@ -121,11 +123,16 @@ if [ ! -f $BASE.demux.fq.gz ]; then
 fi
 ```
 
+
+
+
 ### STEP 2. Clustering
 ![](img/uparseotu_algo.jpg)
 [Clustering](https://www.drive5.com/usearch/manual/uparseotu_algo.html)
 
 This step will cluster sequences into Operational Taxonomy Unit (OTU), then generate representative OTU sequences and OTU table. OTU generation pipelines in AMPtk uses UPARSE clustering with 97% similarity (this can be changed).
+
+Note: at clustering step, we used merged sequence from STEP1 as an input and we will generate clustered sequences file and OTU table.
 
 ```bash
 if [ ! -f $BASE.otu_table.txt ];  then
@@ -136,6 +143,8 @@ fi
 
 Checking OTU table
 ```bash
+head AMPtkITS.otu_table.txt
+
 #OTU ID	ITS.CC.18A	ITS.CC.18B	ITS.CC.28A	ITS.CC.28B	ITS.CC.8B
 OTU1	2301	2871	353140	11034	14929
 OTU10	0	2580	2	0	0
@@ -150,6 +159,8 @@ OTU107	1	0	5	1	1
 
 ### STEP 3. Taxonomy Assignment
 This step will assign taxonomy to each OTU sequence and add taxonomy to OTU table. This command will generate taxnomy based on the ITS database.
+
+Note: at Taxonomy Assignment step, we will use clustered sequences file and OTU table for taxonomy assignment from ITS database
 
 ```bash
 if [ ! -f $BASE.otu_table.taxonomy.txt ]; then
@@ -171,7 +182,7 @@ OTU5	SS|1.0000|LN881898|NA;k:Fungi,p:Ascomycota,c:Lecanoromycetes,o:Acarosporale
 
 
 ### STEP 4. FUNGuilds Assignment
-We can also assign Fungi Funtional Guilds for each taxonomy using [FUNGuilds](https://github.com/UMNFuN/FUNGuild).
+We can also assign Fungi Functional Guilds for each taxonomy using [FUNGuilds](https://github.com/UMNFuN/FUNGuild).
 
 ```bash
 if [ ! -f $BASE.guilds.txt ]; then
@@ -204,7 +215,7 @@ cut -f11 AMPtkITS.guilds.txt | sort | uniq -c
 
 ### STEP 5. Run 01_AMPtk_ITS.sh
 
-We've learned all four main steps for NGS amplicon data processing. Now, we will add all the steps together and run as a bash script `AMPtk.sh`
+We've learned all four main steps for NGS amplicon data processing. Now, we will add all the steps together and run as a bash script `01_AMPtk_ITS.sh`
 
 ```bash
 sbatch pipeline/01_AMPtk_ITS.sh
