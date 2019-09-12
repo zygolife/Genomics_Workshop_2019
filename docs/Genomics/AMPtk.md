@@ -1,4 +1,4 @@
-# NGS Amplicon Data Processing using AMPtk :koala:
+# :koala: NGS Amplicon Data Processing using AMPtk 
 
 We will use [AMPtk](https://amptk.readthedocs.io/en/latest/index.html) to process NGS amplicon data.
 
@@ -85,10 +85,10 @@ There are several different file format that could be generated from Illumina Mi
 ![](img/merge.jpg)
 [Merged PE reads](https://www.drive5.com/usearch/manual10/merge_pair.html)
 
-You can use `nano` editor to simply create `AMPtk.sh` script by copyign following command to `nano` and save the sceript in `pipeline` folder.
+You can use `nano` editor to simply create `01_AMPtk_ITS.sh` script by copyign following command to `nano` and save the sceript in `pipeline` folder.
 
 ```bash
-nano pipeline/AMPtk.sh
+nano pipeline/01_AMPtk_ITS.sh
 ```
 
 The beginnings of this script are going to be listed here and then I will provide the entire [script here](need to update this).
@@ -123,7 +123,7 @@ fi
 
 ### STEP 2. Clustering
 ![](img/uparseotu_algo.jpg)
-[Clusterin](https://www.drive5.com/usearch/manual/uparseotu_algo.html)
+[Clustering](https://www.drive5.com/usearch/manual/uparseotu_algo.html)
 
 This step will cluster sequences into Operational Taxonomy Unit (OTU), then generate representative OTU sequences and OTU table. OTU generation pipelines in AMPtk uses UPARSE clustering with 97% similarity (this can be changed).
 
@@ -202,12 +202,12 @@ cut -f11 AMPtkITS.guilds.txt | sort | uniq -c
 ```
 
 
-### STEP 5. Run AMPtk.sh
+### STEP 5. Run 01_AMPtk_ITS.sh
 
 We've learned all four main steps for NGS amplicon data processing. Now, we will add all the steps together and run as a bash script `AMPtk.sh`
 
 ```bash
-sbatch pipeline/AMPtk.sh
+sbatch pipeline/01_AMPtk_ITS.sh
 ```
 
 We only process 5 samples. AMPtk will take several minutes. When the run is completed, you should generate these files.
