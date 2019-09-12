@@ -1,5 +1,15 @@
 # Comparative genomics
 
+# Ortholog and Paralog identification
+
+## Single-linkage
+
+## OrthoFinder
+
+## MCL Clustering
+
+All vs All BLASTP 
+
 # Summarizing Gene Function Content
 
 ## Domain content summary
@@ -19,13 +29,3 @@
 ## Extracting domain copies
 
 ## Multiple alignments
-
-# Ortholog and Paralog identification
-
-## Single-linkage 
-
-## OrthoFinder
-
-## MCL Clustering
-
-All vs All BLASTP 

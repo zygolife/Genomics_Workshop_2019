@@ -41,6 +41,7 @@ do
 done
 ```
 Megahit
+
 ```BASH
 #!/usr/bin/bash
 #SBATCH -p intel -N 1 -n 8 --mem 96gb --out logs/metahit.%a.log
@@ -79,6 +80,7 @@ There are 3 steps to run these.
 
 1. Assign taxonomy identity of each contig. This can be done with NT searches or BLASTX searches. The following uses DIAMOND for a relatively fast screening.
 See `pipeline/03_blob_blastx.sh`
+
 ```BASH
 #SBATCH -p intel --mem 64gb -N 1 -n 32 --out logs/blastx.%a.log
 
@@ -120,6 +122,7 @@ done
 
 2. Next need to generate a BAM file to allow calculation of the coverage of each contig.
 See `pipeline/04_blob_make_cov.sh`
+
 ```BASH
 #!/usr/bin/bash
 #SBATCH -N 1 -n 16 -p short --mem 64gb --out logs/make_cov.%a.log
@@ -169,6 +172,7 @@ done
 
 3. These taxonomy and coverage data files are used to construct the Blob Plots.
 See `pipeline/05_blob_makeplot.sh`
+
 ```bash
 #!/usr/bin/bash
 #SBATCH -p short --mem 8gb -N 1 -n 1 --out logs/blob.%a.log
@@ -230,6 +234,7 @@ do
 	fi
 done
 ```
+
 ### Classification
 
 We can use fast classification tools like kaiju on raw reads or assembled contigs.
