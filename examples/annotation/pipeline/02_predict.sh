@@ -12,6 +12,13 @@ module load ncbi-blast/2.2.31+
 
 export AUGUSTUS_CONFIG_PATH=$(realpath lib/augustus/config)
 
+GMFOLDER=`dirname $(which gmhmme3)`
+
+# make genemark key link required to run it
+if [ ! -f ~/.gm_key ]; then
+	ln -s $GMFOLDER/.gm_key ~/.gm_key
+fi
+
 SEED_SPECIES="anidulans"
 BUSCOPATH=/srv/projects/db/BUSCO/v9
 CPU=1
