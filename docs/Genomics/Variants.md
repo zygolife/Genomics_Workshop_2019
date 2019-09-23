@@ -10,9 +10,9 @@ Definitions
 # SNP and short INDEL
 
 ## setup
-Download data into the folder, we are using 3 from the .
+Download data into the folder, we are using 3 from yeast 1001 genome project.
 
-```BASH
+```bash
 cd examples/variant/input
 module load aspera
 /bigdata/stajichlab/shared/bin/sra_download.pl -ascp -id $ASPERAKEY sra.txt
@@ -25,7 +25,7 @@ ERR1308590,Y4
 ERR1308591,CEY622
 ERR1308592,CBS1489
 ```
-Procedure is to align short reads to reference genome, then capture
+Procedure is to align short reads to reference genome, then capture SNPs with different
 
 # Copy Number Variation
 

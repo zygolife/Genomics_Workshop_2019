@@ -37,30 +37,30 @@ Wednesday 9/11
    * 9:00 AM [Transcriptomics: RNASeq Assembly](Transcriptomics/RNASeqAssembly): Assembling Transcripts from RNASeq
    * [Transcriptomics: Quantifying Gene Expression with RNASeq](Transcriptomics/RNASeq_AlignQuant): Quantifying Gene Expression
    * [Genomics: Getting sequences from databases](Genomics/GettingSequences)
-   * Lunch 12:30 PM - HUB
-   * 1:30 PM  [Genomics: Genome Annotation](Genomics/Annotation)
+   * Lunch 12:30 PM - HUB / The Habit
+   * 1:30 PM [Genomics: Genome Annotation](Genomics/Annotation)
    * Break: 2:15-3:15 Magnus Nordborg Seminar
-
+   * [Genomics: Genome Annotation](Genomics/Annotation)
 
 Thursday 9/12
 =============
    * 9:00 AM Start
    * [Genomics: Protein Domain identification](Genomics/ProteinAnnotation)
    * [Evolutionary Genomics: Comparative Genomics](Evolutionary_Genomics/ComparativeGenomics)
-  * Lunch 12:30 PM -
+  * Lunch 12:30 PM - Best Thai
   * [Evolutionary Genomics: Buidling species trees with PHYling](Evolutionary_Genomics/PHYling)
   * [Genomics: Variant and Polymorphism identification](Genomics/Variants)
-  * Dinner Tio's Tacos
+  * Dinner: Tio's Tacos
 
 Evening/work on your own on short project
 
 Friday 9/13
 ================
-   * 9:00-10:30 [Microbiome Data Processing (using AMPtk) ](Genomics/AMPtk) 
+   * 9:00-10:30 [Microbiome Data Processing (using AMPtk) ](Genomics/AMPtk)
    * [Genomics: Metagenomics](Genomics/Metagenomics)
-   * Lunch 12:30 PM
+   * Lunch 12:30 PM - HUB/The Habit
    * Project work and revisiting challenges
    * Afternoon II:
       - Short project summary results
    * 4:30 - Wrapup
-   * Group Dinner Out
+   * Group Dinner Out - Sushi 91
