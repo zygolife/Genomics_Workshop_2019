@@ -1,0 +1,8 @@
+ForwardX11 yes
+ForwardX11Trusted yes
+ForwardAgent yes
+
+Host hpcc
+ Hostname cluster.hpcc.ucr.edu
+ User REPLACE_WITH_HPCC_LOGIN_NAME
+ ServerAliveInterval 10

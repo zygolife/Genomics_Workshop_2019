@@ -105,3 +105,7 @@ This code is
 mkdir -p plots reports
 Rscript Rscripts/kallisto_DESeq.R > logs/DESeq_kallisto.log
 ```
+
+## Visualizating and interacting with data
+
+[Degust](http://degust.erc.monash.edu/degust/)
